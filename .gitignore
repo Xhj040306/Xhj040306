@@ -1,0 +1,65 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.python-version
+.pytest_cache/
+.ruff_cache/
+
+# ---------- 密钥与环境变量（绝对不要上传）----------
+.env
+.env.*
+*.local.json
+secrets/
+.gh_token
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+
+# ---------- 数据集 / 模型权重（大文件不入库）----------
+data/
+datasets/
+checkpoints/
+runs/
+wandb/
+mlruns/
+outputs/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.npz
+*.h5
+*.pkl
+
+# ---------- 仿真日志与缓存 ----------
+logs/
+*.log
+.mujoco/
+isaac_cache/
+
+# ---------- 编辑器 / 系统 ----------
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# 说明：演示用 GIF 体积小，建议直接入库；
+# 演示视频请走 Git LFS 或 GitHub Release 附件，不要直接提交 mp4。
+
+# ---------- 作品集工作区专用 ----------
+# projects/ 下每个作品都是独立仓库，不能被主页仓库跟踪
+projects/
+# 临时文件
+ssh-pubkey.txt
+.tmp_known_hosts
+
+# 工具链冒烟测试产物
+.simcheck/
+docs/
